@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
     public static void task1 () {
         System.out.println("Задача 1");
@@ -93,6 +94,18 @@ public class Main {
         while (friday <= daysMonth){
             System.out.println("Сегодня пятница, " + friday + "-e число. Пора подготовить отчет.");
             friday += 7;
+        }
+    }
+    public static void task8 () {
+        System.out.println();
+        System.out.println("Задача 8");
+        int currentYear = 2023;
+        int startYear = currentYear - 200;
+        int endYear = currentYear + 100;
+        for (int year = startYear; year < endYear ; year++) {
+            if (year % 79 == 0){
+                System.out.println(year);
+            }
         }
     }
 }
