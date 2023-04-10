@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
     public static void task1 () {
         System.out.println("Задача 1");
@@ -54,6 +55,19 @@ public class Main {
         for (int month = 1;deposit<=targetMoney; month++){
             deposit += deposit*percent;
             System.out.println("Месяц " + month + ", сумма накоплений " + deposit);
+        }
+    }
+    public static void task5 () {
+        System.out.println();
+        System.out.println("Задача 5");
+        int deposit = 15000;
+        double percent = 0.07;
+        int targetMoney = 12000000;
+        for (int month = 1;deposit<=targetMoney; month++){
+                deposit += deposit * percent;
+            if (month % 6 ==0) {
+                System.out.println("Месяц " + month + ", сумма накоплений " + deposit);
+            }
         }
     }
 }
