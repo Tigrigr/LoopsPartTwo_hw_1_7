@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
     public static void task1 () {
         System.out.println("Задача 1");
@@ -42,6 +43,17 @@ public class Main {
             float death = population * deathRate;
             population = population + birth - death;
             System.out.println("Год " + i + ". Население " + (int)population);
+        }
+    }
+    public static void task4 () {
+        System.out.println();
+        System.out.println("Задача 4");
+        int deposit = 15000;
+        double percent = 0.07;
+        int targetMoney = 12000000;
+        for (int month = 1;deposit<=targetMoney; month++){
+            deposit += deposit*percent;
+            System.out.println("Месяц " + month + ", сумма накоплений " + deposit);
         }
     }
 }
